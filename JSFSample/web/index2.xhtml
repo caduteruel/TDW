@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>IMC</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            
+            Peso: 
+            <h:inputText value="#{CadastroIMC.peso}" required="true" requiredMessage="Preencha o Peso"/><br/>
+            
+                        
+        </h:form>
+        
+        <h:form>
+            
+            Altura: 
+            <h:inputText value="#{CadastroIMC.altura}" required="true" requiredMessage="Preencha a Altura"/><br/>
+            
+                        
+        </h:form>
+        
+         
+        <h:commandButton value="Grava" action="#{CadastroIMC.gravaDados}"/>
+        
+        <h:outputText value="#{cadastroIMC.exibe}"/>
+  
+    </h:body>
+</html>
+
