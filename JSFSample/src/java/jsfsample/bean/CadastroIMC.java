@@ -53,7 +53,9 @@ public class CadastroIMC {
     
     
     
-    public String calculaDados() {
-        this.setResultado("O Resultado é: " + getResultado());
+    public void calculaDados() {
+        Double altura = this.getAltura() * this.getAltura(); 
+        Double imc = this.getPeso() / altura;
+        this.setResultado("O Resultado é: " + imc());
     }
 }
